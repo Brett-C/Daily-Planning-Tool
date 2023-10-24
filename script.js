@@ -8,7 +8,7 @@ $(function () {
 
   function timeSync() {
     const today = dayjs()
-    const hours = 10;
+    const hours = today.hour();
     const minutes = today.format("mm")
     const seconds = today.format("ss a")
     $('#currentDay').text(`Today is ${today.format('ddd, MMM DD')} and the time is ${hours}:${minutes}:${seconds}`);
